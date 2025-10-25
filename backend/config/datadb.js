@@ -19,5 +19,5 @@ const userSchema = new mongoose.Schema({
     public_id: { type: String }
 }, { timestamps: true });
 
-const Data = mongoose.models.Data || mongoose.model("Data", userSchema);
+const Data = mongoose.models.DataCrud || mongoose.model("DataCrud", userSchema);
 export default Data;
