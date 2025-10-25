@@ -19,5 +19,5 @@ const userSchema = new mongoose.Schema({
     otpExpiredAt:{type:Number,default:0},
 },{timestamps:true});
 
-const User = mongoose.models.User || mongoose.model("User",userSchema);
+const User = mongoose.models.UserInformation || mongoose.model("UserInformation",userSchema);
 export default User;
