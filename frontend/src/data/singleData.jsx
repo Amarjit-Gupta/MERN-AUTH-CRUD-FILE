@@ -54,10 +54,10 @@ const SingleData = () => {
                 {load2 ? <div className="load"><img src={loader} alt="" /></div> : <><div className="image">{file && <img src={file} alt="" />}</div>
                     <div className="data">
                         <p>Name: {name.length > 13 ? name.slice(0, 10) + "..." : name}</p>
-                        <p>Price: {price.length > 13 ? price.slice(0, 10) + "..." : price}</p>
+                        <p>Price: {String(price).length > 13 ? String(price).slice(0, 10) + "..." : price}</p>
                         <p>Company: {company.length > 13 ? company.slice(0, 10) + "..." : company}</p>
                         <p>Category: {category.length > 13 ? name.slice(0, 10) + "..." : name}</p>
-                        <p>Quantity: {quantity.length > 13 ? quantity.slice(0, 10) + "..." : quantity}</p>
+                        <p>Quantity: {String(quantity).length > 13 ? String(quantity).slice(0, 10) + "..." : quantity}</p>
                     </div>
                     <div className="allData-btn" onClick={() => navigate(`/`)}>
                         <IoArrowBackSharp />Goto All Data
