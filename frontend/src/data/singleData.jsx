@@ -56,7 +56,7 @@ const SingleData = () => {
                         <p>Name: {name.length > 13 ? name.slice(0, 10) + "..." : name}</p>
                         <p>Price: {String(price).length > 13 ? String(price).slice(0, 10) + "..." : price}</p>
                         <p>Company: {company.length > 13 ? company.slice(0, 10) + "..." : company}</p>
-                        <p>Category: {category.length > 13 ? name.slice(0, 10) + "..." : name}</p>
+                        <p>Category: {category.length > 13 ? category.slice(0, 10) + "..." : category}</p>
                         <p>Quantity: {String(quantity).length > 13 ? String(quantity).slice(0, 10) + "..." : quantity}</p>
                     </div>
                     <div className="allData-btn" onClick={() => navigate(`/`)}>
