@@ -124,18 +124,9 @@ const AllData = () => {
                                 value.map((v, i) => {
                                     return (
                                         <div className="allData-child2" key={v._id}>
-                                            <div className="column1">{String(i + 1).length > 4 ? String(i + 1).slice(0, 4) + ".." : (i + 1)}.</div>
-                                            <div className="column2">{v.name.length > 10 ? v.name.slice(0, 8) + ".." : v.name}</div>
-                                            <div className="column2">₹{String(v.price).length > 9 ? String(v.price).slice(0, 7) + ".." : v.price}</div>
-                                            {/* <div className="column2">{v.category.length > 10 ? v.category.slice(0, 8) + ".." : v.category}</div>
-                                        <div className="column2">{v.company.length > 10 ? v.company.slice(0, 8) + ".." : v.company}</div>
-                                        <div className="column1">{String(v.quantity).length > 5 ? String(v.quantity).slice(0, 5) + ".." : v.quantity}</div>
-
-                                        <div className="column1">
-                                            <img style={{height:"30px",width:"50px"}} src={v.url} alt="broken image" />
-                                        </div> */}
-
-
+                                            <div className="column1">{String(i + 1).length > 3 ? String(i + 1).slice(0, 3) + ".." : (i + 1)}.</div>
+                                            <div className="column2">{v.name.length > 7 ? v.name.slice(0, 7) + ".." : v.name}</div>
+                                            <div className="column2">₹{String(v.price).length > 5 ? String(v.price).slice(0, 5) + ".." : v.price}</div>
                                             <div className="column2">
                                                 <div className="operation">
                                                     <button className="btn1" onClick={() => navigate(`/edit/${v._id}`)}><FiEdit /></button>
